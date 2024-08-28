@@ -46,7 +46,7 @@
                 inset 0 0 0 3px #efefef
                 inset 0 0 10px black
                 0 0 10px rgba(0, 0, 0, 0.2);
-
+        }
 
         .clock-face {
             position: relative;
@@ -66,6 +66,24 @@
             transition: all 0.05s;/*Smooths out changes to the element over 0.05 seconds. Makes the clock hand move smoothly when it updates*/
             transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); /*creates a unique bouncy effect, making the clock hand move in a more dynamic way when it transitions.*/
         }
+
+        .hour-hand {
+        height: 8px; /* thicker for hour hand */
+        background: blue; /* color for hour hand */
+        }
+
+        .min-hand {
+            height: 6px; /* default size for minute hand */
+            background: green; /* color for minute hand */
+        }
+
+        .second-hand {
+            height: 4px; /* thinner for second hand */
+            background: red; /* color for second hand */
+        }
+
+
+
         
     </style>
 
